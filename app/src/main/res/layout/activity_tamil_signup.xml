@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".TamilSignupActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="370dp"
+        android:layout_height="173dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/top"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:text="மருத்துவமனை"
+        android:textColor="#FFFFFF"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="34dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="10dp"
+        android:layout_weight="1"
+        android:text="இருப்பிட விவரிப்பாளர்"
+        android:textColor="#757575"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="329dp"
+        android:layout_height="495dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="10dp"
+        app:cardCornerRadius="20dp"
+        android:background="@color/white"
+        app:cardElevation="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView1" >
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="50dp"
+                android:text="பதிவுசெய்தல்"
+                android:textColor="#000000"
+                android:textSize="35dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="20dp">
+            </TextView>
+
+            <EditText
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/roundedit"
+                android:drawableStart="@drawable/mail"
+                android:drawablePadding="10dp"
+                android:hint="பயனர் ஐடி"
+                android:paddingStart="10dp"
+                android:textColorHint="@color/black"
+                android:paddingLeft="10dp"
+                android:drawableLeft="@drawable/mail" />
+
+            <EditText
+                android:id="@+id/number"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/roundedit"
+                android:drawableStart="@drawable/number"
+                android:drawablePadding="10dp"
+                android:hint="மொபைல் எண்"
+                android:paddingStart="10dp"
+                android:textColorHint="@color/black"
+                android:paddingLeft="10dp"
+                android:drawableLeft="@drawable/number" />
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/roundedit"
+                android:drawableStart="@drawable/password"
+                android:drawablePadding="10dp"
+                android:hint="கடவுச்சொல்"
+                android:paddingStart="10dp"
+                android:textColorHint="@color/black"
+                android:paddingLeft="10dp"
+                android:drawableLeft="@drawable/password" />
+
+            <EditText
+                android:id="@+id/cpassword"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/roundedit"
+                android:drawableStart="@drawable/password"
+                android:drawablePadding="10dp"
+                android:hint="கடவுச்சொல்"
+                android:paddingStart="10dp"
+                android:textColorHint="@color/black"
+                android:paddingLeft="10dp"
+                android:drawableLeft="@drawable/password" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:backgroundTint="@color/orange"
+                android:text="பதிவுசெய்தல்"
+                android:textColor="@color/white"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="145dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:text="OR"
+                android:textColor="#000000"
+                android:textSize="25dp"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:id="@+id/tamillogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="10dp"
+                android:text="தற்போதுள்ள பயனர் உள்நுழைவு"
+                android:textColor="#000000"
+                android:textSize="16sp"></TextView>
+        </LinearLayout>
+        </ScrollView>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
